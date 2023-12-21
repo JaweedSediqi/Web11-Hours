@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <link rel="stylesheet" href="New.css">
+</head>
+
+<body>
+    <div class="containner">
+        <div class="date">
+            <span style="margin-right: 10px; font-size: 70px;" id="hour">8</span> <span style="font-size: 70px;">:</span>
+            <span style="margin-right: 10px; font-size: 70px;" id="minite">36</span> <span style="font-size: 70px;">:</span>
+            <span style="margin-right: 10px; font-size: 70px;" id="second">56</span>
+          
+        </div>
+    </div>
+    <script>
+        const hour=document.getElementById('hour');
+        const minite=document.getElementById('minite');
+        const second=document.getElementById('second');
+        setInterval(x,1000);
+        function x(){
+            var today=new Date();
+        hour.innerHTML=today.getHours();
+        minite.innerHTML=today.getMinutes();
+        second.innerHTML=today.getSeconds();
+        }
+    
+    </script>
+</body>
+
+</html>
